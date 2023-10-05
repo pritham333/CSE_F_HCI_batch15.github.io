@@ -1,0 +1,218 @@
+<html>
+<head>
+<title>TIMETABLES</title>
+    <style>
+        body, h2, form {
+            margin: 1;
+            padding: 1;
+        }
+
+          .container {
+            max-width: 1000px;
+            margin: 1 auto;
+            padding: 30px;
+            text-align: left;
+            background-color: gray;
+            border-radius: 15px;
+            box-shadow: 0 1 15px rgba(0, 0, 0, 0.5);
+        }
+
+       
+        h3 {
+            font-size: 25px;
+            margin-bottom: 25px;
+            color: yellow;
+        }
+
+       
+        form {
+            display: inline;
+            flex-direction: column;
+            align-items: left;
+        }
+
+        label {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: yellow;
+        }
+
+        select, input[type="submit"] {
+            padding: 15px;
+            font-size: 20px;
+            margin: 5px 0;
+            border: 2px solid #ccc;
+            border-radius: 7px;
+            width: 100%;
+            background-color: lightgrey;
+            color: black;
+        }
+
+        input[type="submit"] {
+            background-color: tomato;
+            color: black;
+            cursor: progress;
+            transition-timing-function: linear;
+        }
+
+        input[type="submit"]:hover {
+            background-color:skyblue;
+        }
+
+        /* Style the timetable display */
+        #timetable {
+            margin-top: 25px;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 7px;
+            text-align: left;
+            background-color: grey;
+            box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+        }
+        #timetable h2 {
+            font-size: 20px;
+            margin-bottom: 16px;
+            color: pink;
+        }
+
+        #timetable p {
+            font-size: 20px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="im">
+<img class="img-rounded" src="sru_logo_newer.webp" width="25%" align="center">
+</div>
+    <div class="container">
+        <h1>TIMETABLES</h1>
+        <form id="timetable-form">
+            <label for="year">Select Year:</label>
+            <select id="year" name="year">
+                <option value="year1">1st Year</option>
+                <option value="year2">2nd Year</option>
+                <option value="year3">3rd Year</option>
+                <option value="year4">4th Year</option>
+            </select>
+            <label for="branch">Select Branch:</label>
+            <select id="branch" name="branch">
+                <option value="CSE_AI">CSE &amp; AI</option>
+                <option value="ECE">ECE</option>
+                <option value="EEE">EEE</option>
+                <option value="MECH">MECH</option>
+                <option value="CIVIL">CIVIL</option>
+            </select>
+            <input type="submit" value="DISPLAY TIMETABLES">
+            </form>
+            <div id="timetable">
+                <!-- Timetable content will be displayed here -->
+            </div>
+        </div>
+        <script>
+            const timetables = {
+                year2: {
+                    "CSE_AI":`
+                         
+                           <h2> 2nd Year, CSE & AI, Section A</h2>
+                            <p>
+                              <a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-A.html">CSE-A</a>
+                            </p>
+                        
+                        
+                            '<h2> 2nd Year, CSE & AI, Section B</h2>
+                            <p>
+                                <a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-B.html">CSE-B</a>
+                            </p>
+                        
+                        
+                            <h2> 2nd Year, CSE & AI, Section C</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-C.html">CSE-C</a></p>
+                        
+
+                            <h2>2nd Year, CSE & AI, Section D</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-D.html">CSE-D</a></p>
+                        
+ 
+                            <h2> 2nd Year, CSE & AI, Section E</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-E.html">CSE-E</a></p>
+                        
+
+                            <h2> 2nd Year, CSE & AI, Section F</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-F.html">CSE-F</a></p>
+                        
+
+                            <h2> 2nd Year, CSE & AI, Section G</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-G.html">CSE-G</a></p>
+                        
+
+                            <h2> 2nd Year, CSE & AI, Section H</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-H.html">CSE-H</a></p>
+                        
+
+                            <h2> 2nd Year, CSE & AI, Section I</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-I.html">CSE-I</a></p>
+                        
+
+                            <h2>2nd Year, CSE & AI, Section J</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-J.html">CSE-J</a></p>
+                        
+
+                            <h2> 2nd Year, CSE & AI, Section K</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-K.html">CSE-K</a></p>
+                        
+
+                            <h2> 2nd Year, CSE & AI, Section L</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-L.html">CSE-L</a></p>
+                        
+
+                            <h2> 2nd Year, CSE & AI, Section M</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-M.html">CSE-M</a></p>
+                        
+
+                            <h2> 2nd Year, CSE & AI, Section N</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-N.html">CSE-N</a></p>
+                        
+
+                            <h2> 2nd Year, CSE & AI, Section O</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-O.html">CSE-O</a></p>
+                        
+
+                            <h2> 2nd Year, CSE & AI, Section CSE-AIML-A</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-A-1.html">CSE-AIML-A</a></p>
+                        
+
+                            <h2>r 2nd Year, CSE & AI, Section CSE-AIML-B</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-B.html">CSE-AIML-B</a></p>
+                        
+
+                            <h2>2nd Year, CSE & AI, Section CSE-AIML-C</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-C.html">CSE-AIML-C</a></p>
+                        
+
+                            <h2>2nd Year, CSE & AI, Section CSE-AIML-A</h2>
+                            <p><a href="http://sru.42web.io/wp-content/uploads/2023/08/2CSE-AIML-D.html">CSE-AIML-D</a></p>`,
+                        
+                        
+                    
+                    
+                },
+                
+            };
+        document.getElementById('timetable-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const year = document.getElementById('year').value;
+            const branch = document.getElementById('branch').value;
+            
+
+            // Check if the timetable data exists
+            if (timetables[year] && timetables[year][branch] ) {
+                const timetableContent = timetables[year][branch];
+                document.getElementById('timetable').innerHTML = timetableContent;
+            } else {
+                document.getElementById('timetable').innerHTML = "<p>Timetable data not available for the selected year, branch, and section.</p>";
+            }
+        });
+        </script>
+        </body>
+        </html>
